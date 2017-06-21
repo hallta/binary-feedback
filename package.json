@@ -1,7 +1,7 @@
 {
     "name": "binary-feedback",
         "description": "Two buttons intended to gather user feedback",
-        "version": "1.0",
+        "version": "1.0.0",
         "author": "Trevor Hall",
         "contributors": [],
         "scripts": {
