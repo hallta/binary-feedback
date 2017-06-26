@@ -6,7 +6,7 @@ $(document).ready(function() {
     if (!feedbackKey) throw 'Feedback key required';
 
     $.ajax({
-      url: '/api/submit?r=' + Math.random(),
+      url: '/api/save?r=' + Math.random(),
       data: {
         pos: isPositive,
         key: feedbackKey
