@@ -1,20 +1,15 @@
-doctype html
-html(lang='en')
-  link(href='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css', rel='stylesheet')
-  link(href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', rel='stylesheet')
-  link(href='css/shared.css', rel='stylesheet')
+extends layout 
+
+block content
+
   link(href='css/index.css', rel='stylesheet')
 
-  script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
-  script(src='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js')
-  script(src='//cdnjs.cloudflare.com/ajax/libs/purl/2.3.1/purl.min.js')
   script(src='js/index.js')
 
-  body
-    div.row.index-first-row
-      div.col-md-offset-3.col-md-3
-        a.btn.btn-success.btn-feedback
-          span.fa.fa-4.fa-thumbs-o-up
-      div.col-md-3
-        a.btn.btn-danger.btn-feedback
-          span.fa.fa-4.fa-thumbs-o-down
+  div.row.index-first-row
+    div.col-md-offset-3.col-md-3
+      a.btn.btn-success.btn-feedback
+        span.fa.fa-4.fa-thumbs-o-up
+    div.col-md-3
+      a.btn.btn-danger.btn-feedback
+        span.fa.fa-4.fa-thumbs-o-down
