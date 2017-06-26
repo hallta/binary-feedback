@@ -5,8 +5,8 @@
         "author": "Trevor Hall",
         "contributors": [],
         "scripts": {
-            "start": "node_modules/forever/bin/forever start -a -l binary-feedback.log -p log/ -w --watchIgnore '**' main.js",
-            "stop": "node_modules/forever/bin/forever stop main.js"
+            "start": "node_modules/forever/bin/forever start -a -l binary-feedback.log -p log/ -w --watchIgnore '**' app.js",
+            "stop": "node_modules/forever/bin/forever stop app.js"
         },
         "license": "MIT",
         "dependencies": {
