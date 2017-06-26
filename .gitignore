@@ -1,7 +1,7 @@
 ### Custom ignores
 *.sw[a-z]
 client_secret.json
-google-feedback.json
+config/*.json
 
 ### DEFAULT BELOW
 # Logs
