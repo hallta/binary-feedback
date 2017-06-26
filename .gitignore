@@ -2,6 +2,7 @@
 *.sw[a-z]
 client_secret.json
 config/*.json
+todo.md
 
 ### DEFAULT BELOW
 # Logs
