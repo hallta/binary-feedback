@@ -10,5 +10,5 @@
 
 ## Usage
 ### Web Input
-http://localhost:3000/?key=teerev
+http://localhost:3000/?key=<feedback key>
 
