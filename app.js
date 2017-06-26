@@ -18,5 +18,5 @@ storage.register(googleDocs);
 routing.bootstrap(app);
 
 app.listen(3000, function() {
-    console.log('binary-feedback running ... ');
+  console.log('binary-feedback running ... ');
 });

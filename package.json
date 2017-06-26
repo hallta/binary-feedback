@@ -1,19 +1,21 @@
 {
-    "name": "binary-feedback",
-        "description": "Two buttons intended to gather user feedback",
-        "version": "1.0.0",
-        "author": "Trevor Hall",
-        "contributors": [],
-        "scripts": {
-            "start": "node_modules/forever/bin/forever start -a -l binary-feedback.log -p log/ -w --watchIgnore 'static/**' --watchIgnore 'views/**' app.js",
-            "stop": "node_modules/forever/bin/forever stop app.js"
-        },
-        "license": "MIT",
-        "dependencies": {
-            "express": "4.15.3",
-            "body-parser": "1.17.2",
-            "jade": "1.11.0",
-            "morgan": "1.8.2",
-            "forever": "0.15.3"
-        }
+  "name": "binary-feedback",
+  "description": "Two buttons intended to gather user feedback",
+  "version": "1.0.0",
+  "author": "Trevor Hall",
+  "contributors": [],
+  "scripts": {
+    "start": "node_modules/forever/bin/forever start -a -l binary-feedback.log -p log/ -w --watchIgnore 'static/**' --watchIgnore 'views/**' app.js",
+    "stop": "node_modules/forever/bin/forever stop app.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "4.15.3",
+    "body-parser": "1.17.2",
+    "jade": "1.11.0",
+    "morgan": "1.8.2",
+    "forever": "0.15.3",
+    "googleapis": "19.0.0",
+    "google-auth-library": "0.10.0"
+  }
 }
