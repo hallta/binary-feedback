@@ -3,15 +3,39 @@ $(document).ready(function() {
 
   const submitFeedback = function submitFeedback(token) {
     const feedbackKey = $.url().param('key');
-    if (!feedbackKey) throw 'Feedback key required';
+    if (!feedbackKey) {
+        alert('Feedback key required');
+        throw 'Feedback key required';
+    }
 
     $.ajax({
       url: '/api/save?r=' + Math.random(),
       data: {
-        pos: token,
+        title: $('div.row.title-row h1').text(),
+        description: $('div.row.description-row p').text(), 
+        token: token,
         key: feedbackKey
       },
     }).done(function() {
+        toastr.options = {
+            "closeButton": false,
+            "debug": false,
+            "newestOnTop": true,
+            "progressBar": false,
+            "positionClass": "toast-top-full-width",
+            "preventDuplicates": true,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "5000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        };
+
+        toastr['success']('Thank you for your feedback!');
     });
   };
 
