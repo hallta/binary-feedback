@@ -1,7 +1,7 @@
 ### Custom ignores
 *.sw[a-z]
 client_secret.json
-config/*.json
+config/google-feedback.json
 todo.md
 
 ### DEFAULT BELOW
