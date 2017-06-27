@@ -1,5 +1,12 @@
 
 
-.row.index-first-row {
-  margin-top: 100px;
+.row.title-row, .row.description-row {
+  text-align: center;
+}
+
+a.btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 99%;
 }
